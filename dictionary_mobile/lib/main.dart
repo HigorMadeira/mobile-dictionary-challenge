@@ -49,8 +49,8 @@ class MyHomePageState extends State<MyHomePage> {
           ? const Center(child: CircularProgressIndicator())
           : GridView.builder(
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 120,
-                mainAxisExtent: 110,
+                maxCrossAxisExtent: 140,
+                mainAxisExtent: 92,
                 crossAxisSpacing: 2,
                 mainAxisSpacing: 2,
               ),
