@@ -13,6 +13,10 @@
 			"path": "dictionary_ui_core"
 		},
 		{
+			"name": "dictionary_backend",
+			"path": "dictionary_backend"
+		},
+		{
 			"name": "dictionary_mobile",
 			"path": "dictionary_mobile"
 		},

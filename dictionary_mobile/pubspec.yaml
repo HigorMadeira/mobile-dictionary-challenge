@@ -25,7 +25,8 @@ dev_dependencies:
     path: ../dictionary_domain
   dictionary_dependencies_core:
     path: ../dictionary_dependencies_core
-
+  dictionary_backend:
+    path: ../dictionary_backend
   flutter_lints: ^2.0.0
 
 flutter:

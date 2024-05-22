@@ -49,6 +49,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  dictionary_backend:
+    dependency: "direct dev"
+    description:
+      path: "../dictionary_backend"
+      relative: true
+    source: path
+    version: "1.0.0"
   dictionary_dependencies_core:
     dependency: "direct dev"
     description:
