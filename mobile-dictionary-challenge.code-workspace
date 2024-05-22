@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "dictionary_dependencies_core",
+			"path": "dictionary_dependencies_core"
+		},
+		{
+			"name": "dictionary_domain",
+			"path": "dictionary_domain"
+		},
+		{
+			"name": "dictionary_ui_core",
+			"path": "dictionary_ui_core"
+		},
+		{
+			"name": "dictionary_mobile",
+			"path": "dictionary_mobile"
+		},
+	],
+	"settings": {}
+}
