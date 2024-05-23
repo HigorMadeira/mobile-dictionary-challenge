@@ -1,3 +1,4 @@
+import 'package:dictionary_mobile/words_list.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
@@ -10,24 +11,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomePage(),
+      home: AppView(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class AppView extends StatefulWidget {
+  const AppView({super.key});
 
   @override
-  MyHomePageState createState() => MyHomePageState();
+  AppViewState createState() => AppViewState();
 }
 
-class MyHomePageState extends State<MyHomePage> {
+class AppViewState extends State<AppView> {
   Map<String, dynamic>? _words;
-
+  int currentPage = 0;
+  late PageController pageController;
   @override
   void initState() {
     super.initState();
+    pageController = PageController(initialPage: currentPage);
     _loadWords();
   }
 
@@ -40,28 +43,46 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Words Grid"),
-      ),
-      body: _words == null
-          ? const Center(child: CircularProgressIndicator())
-          : GridView.builder(
-              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 140,
-                mainAxisExtent: 92,
-                crossAxisSpacing: 2,
-                mainAxisSpacing: 2,
+        appBar: AppBar(
+          title: const Text("Words Grid"),
+        ),
+        body: _words == null
+            ? const Center(child: CircularProgressIndicator())
+            : PageView(
+                controller: pageController,
+                children: [
+                  WordsList(words: _words!),
+                  Container(
+                    color: Colors.blue,
+                    child: const Center(child: Text("Page 2")),
+                  )
+                ],
               ),
-              itemCount: _words!.length,
-              itemBuilder: (context, index) {
-                String word = _words!.keys.elementAt(index);
-                return Card(
-                  child: Center(child: Text(word)),
-                );
-              },
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: currentPage,
+          onTap: (index) {
+            setState(() {
+              currentPage = index;
+              pageController.jumpToPage(index);
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.grid_on),
+              label: "Grid",
             ),
-    );
+            BottomNavigationBarItem(
+              icon: Icon(Icons.list),
+              label: "List",
+            ),
+          ],
+        ));
   }
 }

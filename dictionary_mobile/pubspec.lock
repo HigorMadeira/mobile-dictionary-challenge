@@ -70,13 +70,6 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
-  dictionary_ui_core:
-    dependency: "direct dev"
-    description:
-      path: "../dictionary_ui_core"
-      relative: true
-    source: path
-    version: "1.0.0"
   fake_async:
     dependency: transitive
     description:

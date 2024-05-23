@@ -9,10 +9,6 @@
 			"path": "dictionary_domain"
 		},
 		{
-			"name": "dictionary_ui_core",
-			"path": "dictionary_ui_core"
-		},
-		{
 			"name": "dictionary_backend",
 			"path": "dictionary_backend"
 		},
