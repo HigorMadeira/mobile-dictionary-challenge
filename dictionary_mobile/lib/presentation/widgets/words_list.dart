@@ -16,8 +16,16 @@ class WordsList extends StatelessWidget {
       itemCount: words!.length,
       itemBuilder: (context, index) {
         String word = words!.keys.elementAt(index);
-        return Card(
-          child: Center(child: Text(word)),
+        return InkWell(
+          borderRadius: BorderRadius.circular(8),
+          onTap: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('$word tapped')),
+            );
+          },
+          child: Card(
+            child: Center(child: Text(word)),
+          ),
         );
       },
     );

@@ -12,20 +12,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
+  flutter_localizations: 
+    sdk: flutter    
+  intl: ^0.18.0
+  dictionary_dependencies_core:
+    path: ../dictionary_dependencies_core
+  dictionary_domain:
+    path: ../dictionary_domain
+  dictionary_backend:
+    path: ../dictionary_backend  
+  flutter_bloc: ^8.1.4
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  dictionary_domain:
-    path: ../dictionary_domain
-  dictionary_dependencies_core:
-    path: ../dictionary_dependencies_core
-  dictionary_backend:
-    path: ../dictionary_backend
-  flutter_lints: ^2.0.0
+
+
 
 flutter:
 
