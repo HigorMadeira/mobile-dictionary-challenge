@@ -20,9 +20,9 @@
 
 ## Lista infinita
 
-        a lista infinita será processada no multiblocprovider do app_page, e o blocconsumer vai gerenciar quando o estado é carregado em HomePageSelector
-
-
+        A lista infinita será processada na instancia do MultiBlocProvider no app_page. "create: (context) => WordsListCubit()..loadWords()"
+        Dessa forma conseguimos gerenciar o estado da HomePageSelector quando o processamento do json for concluido, emitir o estado novo, e puxar para pagina carregada.
+        
 
 
 
