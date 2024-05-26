@@ -40,23 +40,23 @@ mixin _$NavigationState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_home value) home,
-    required TResult Function(_history value) history,
-    required TResult Function(favorites value) favorites,
+    required TResult Function(_Home value) home,
+    required TResult Function(_History value) history,
+    required TResult Function(Favorites value) favorites,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_home value)? home,
-    TResult? Function(_history value)? history,
-    TResult? Function(favorites value)? favorites,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_History value)? history,
+    TResult? Function(Favorites value)? favorites,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_home value)? home,
-    TResult Function(_history value)? history,
-    TResult Function(favorites value)? favorites,
+    TResult Function(_Home value)? home,
+    TResult Function(_History value)? history,
+    TResult Function(Favorites value)? favorites,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -81,24 +81,24 @@ class _$NavigationStateCopyWithImpl<$Res, $Val extends NavigationState>
 }
 
 /// @nodoc
-abstract class _$$homeImplCopyWith<$Res> {
-  factory _$$homeImplCopyWith(
-          _$homeImpl value, $Res Function(_$homeImpl) then) =
-      __$$homeImplCopyWithImpl<$Res>;
+abstract class _$$HomeImplCopyWith<$Res> {
+  factory _$$HomeImplCopyWith(
+          _$HomeImpl value, $Res Function(_$HomeImpl) then) =
+      __$$HomeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$homeImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$homeImpl>
-    implements _$$homeImplCopyWith<$Res> {
-  __$$homeImplCopyWithImpl(_$homeImpl _value, $Res Function(_$homeImpl) _then)
+class __$$HomeImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$HomeImpl>
+    implements _$$HomeImplCopyWith<$Res> {
+  __$$HomeImplCopyWithImpl(_$HomeImpl _value, $Res Function(_$HomeImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$homeImpl implements _home {
-  const _$homeImpl();
+class _$HomeImpl implements _Home {
+  const _$HomeImpl();
 
   @override
   String toString() {
@@ -108,7 +108,7 @@ class _$homeImpl implements _home {
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$homeImpl);
+        (other.runtimeType == runtimeType && other is _$HomeImpl);
   }
 
   @override
@@ -151,9 +151,9 @@ class _$homeImpl implements _home {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_home value) home,
-    required TResult Function(_history value) history,
-    required TResult Function(favorites value) favorites,
+    required TResult Function(_Home value) home,
+    required TResult Function(_History value) history,
+    required TResult Function(Favorites value) favorites,
   }) {
     return home(this);
   }
@@ -161,9 +161,9 @@ class _$homeImpl implements _home {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_home value)? home,
-    TResult? Function(_history value)? history,
-    TResult? Function(favorites value)? favorites,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_History value)? history,
+    TResult? Function(Favorites value)? favorites,
   }) {
     return home?.call(this);
   }
@@ -171,9 +171,9 @@ class _$homeImpl implements _home {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_home value)? home,
-    TResult Function(_history value)? history,
-    TResult Function(favorites value)? favorites,
+    TResult Function(_Home value)? home,
+    TResult Function(_History value)? history,
+    TResult Function(Favorites value)? favorites,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -183,30 +183,30 @@ class _$homeImpl implements _home {
   }
 }
 
-abstract class _home implements NavigationState {
-  const factory _home() = _$homeImpl;
+abstract class _Home implements NavigationState {
+  const factory _Home() = _$HomeImpl;
 }
 
 /// @nodoc
-abstract class _$$historyImplCopyWith<$Res> {
-  factory _$$historyImplCopyWith(
-          _$historyImpl value, $Res Function(_$historyImpl) then) =
-      __$$historyImplCopyWithImpl<$Res>;
+abstract class _$$HistoryImplCopyWith<$Res> {
+  factory _$$HistoryImplCopyWith(
+          _$HistoryImpl value, $Res Function(_$HistoryImpl) then) =
+      __$$HistoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$historyImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$historyImpl>
-    implements _$$historyImplCopyWith<$Res> {
-  __$$historyImplCopyWithImpl(
-      _$historyImpl _value, $Res Function(_$historyImpl) _then)
+class __$$HistoryImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$HistoryImpl>
+    implements _$$HistoryImplCopyWith<$Res> {
+  __$$HistoryImplCopyWithImpl(
+      _$HistoryImpl _value, $Res Function(_$HistoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$historyImpl implements _history {
-  const _$historyImpl();
+class _$HistoryImpl implements _History {
+  const _$HistoryImpl();
 
   @override
   String toString() {
@@ -216,7 +216,7 @@ class _$historyImpl implements _history {
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$historyImpl);
+        (other.runtimeType == runtimeType && other is _$HistoryImpl);
   }
 
   @override
@@ -259,9 +259,9 @@ class _$historyImpl implements _history {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_home value) home,
-    required TResult Function(_history value) history,
-    required TResult Function(favorites value) favorites,
+    required TResult Function(_Home value) home,
+    required TResult Function(_History value) history,
+    required TResult Function(Favorites value) favorites,
   }) {
     return history(this);
   }
@@ -269,9 +269,9 @@ class _$historyImpl implements _history {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_home value)? home,
-    TResult? Function(_history value)? history,
-    TResult? Function(favorites value)? favorites,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_History value)? history,
+    TResult? Function(Favorites value)? favorites,
   }) {
     return history?.call(this);
   }
@@ -279,9 +279,9 @@ class _$historyImpl implements _history {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_home value)? home,
-    TResult Function(_history value)? history,
-    TResult Function(favorites value)? favorites,
+    TResult Function(_Home value)? home,
+    TResult Function(_History value)? history,
+    TResult Function(Favorites value)? favorites,
     required TResult orElse(),
   }) {
     if (history != null) {
@@ -291,30 +291,30 @@ class _$historyImpl implements _history {
   }
 }
 
-abstract class _history implements NavigationState {
-  const factory _history() = _$historyImpl;
+abstract class _History implements NavigationState {
+  const factory _History() = _$HistoryImpl;
 }
 
 /// @nodoc
-abstract class _$$favoritesImplCopyWith<$Res> {
-  factory _$$favoritesImplCopyWith(
-          _$favoritesImpl value, $Res Function(_$favoritesImpl) then) =
-      __$$favoritesImplCopyWithImpl<$Res>;
+abstract class _$$FavoritesImplCopyWith<$Res> {
+  factory _$$FavoritesImplCopyWith(
+          _$FavoritesImpl value, $Res Function(_$FavoritesImpl) then) =
+      __$$FavoritesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$favoritesImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$favoritesImpl>
-    implements _$$favoritesImplCopyWith<$Res> {
-  __$$favoritesImplCopyWithImpl(
-      _$favoritesImpl _value, $Res Function(_$favoritesImpl) _then)
+class __$$FavoritesImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$FavoritesImpl>
+    implements _$$FavoritesImplCopyWith<$Res> {
+  __$$FavoritesImplCopyWithImpl(
+      _$FavoritesImpl _value, $Res Function(_$FavoritesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$favoritesImpl implements favorites {
-  const _$favoritesImpl();
+class _$FavoritesImpl implements Favorites {
+  const _$FavoritesImpl();
 
   @override
   String toString() {
@@ -324,7 +324,7 @@ class _$favoritesImpl implements favorites {
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$favoritesImpl);
+        (other.runtimeType == runtimeType && other is _$FavoritesImpl);
   }
 
   @override
@@ -367,9 +367,9 @@ class _$favoritesImpl implements favorites {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_home value) home,
-    required TResult Function(_history value) history,
-    required TResult Function(favorites value) favorites,
+    required TResult Function(_Home value) home,
+    required TResult Function(_History value) history,
+    required TResult Function(Favorites value) favorites,
   }) {
     return favorites(this);
   }
@@ -377,9 +377,9 @@ class _$favoritesImpl implements favorites {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_home value)? home,
-    TResult? Function(_history value)? history,
-    TResult? Function(favorites value)? favorites,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_History value)? history,
+    TResult? Function(Favorites value)? favorites,
   }) {
     return favorites?.call(this);
   }
@@ -387,9 +387,9 @@ class _$favoritesImpl implements favorites {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_home value)? home,
-    TResult Function(_history value)? history,
-    TResult Function(favorites value)? favorites,
+    TResult Function(_Home value)? home,
+    TResult Function(_History value)? history,
+    TResult Function(Favorites value)? favorites,
     required TResult orElse(),
   }) {
     if (favorites != null) {
@@ -399,6 +399,6 @@ class _$favoritesImpl implements favorites {
   }
 }
 
-abstract class favorites implements NavigationState {
-  const factory favorites() = _$favoritesImpl;
+abstract class Favorites implements NavigationState {
+  const factory Favorites() = _$FavoritesImpl;
 }

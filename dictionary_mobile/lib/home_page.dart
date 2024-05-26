@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Words Grid"),
+        title: const Text("Words List"),
       ),
       body: words == null
           ? const Center(child: CircularProgressIndicator())
