@@ -7,7 +7,7 @@
         .para gerenciamente de estado: Bloc freezed em dependencies_core
 
         O main.dart  carrega a aplicação principal, onde sera carregado as configurações pelo application_start_config e app_page.
-        dessa forma a aplicação fica modular, e de facil compreendimento, evitando exceder muitas linhas.
+        dessa forma a aplicação fica modular e de facil compreendimento, evitando exceder muitas linhas.
 
 
 ## Gerenciamento de estado
