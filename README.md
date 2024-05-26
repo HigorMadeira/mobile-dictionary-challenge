@@ -37,6 +37,6 @@
 ## Aviso
 
 infelizmente não tive tempo pra terminar.
- Fiz a estrutura inicial, mas tive muitos problemas pessoais
+ Fiz a estrutura inicial, mas tive muitos problemas pessoais e acabei tendo que fazer tudo nas ultimas 15 horas.
 
         DEMONSTRAÇÃO : https://drive.google.com/file/d/1g5-wqP88l_On9ooBXZ22vgBxCaft1yJF/view?usp=sharing
