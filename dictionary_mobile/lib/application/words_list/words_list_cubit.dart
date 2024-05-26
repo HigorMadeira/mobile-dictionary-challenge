@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
+import 'package:dictionary_domain/dictionary_domain.dart';
 import 'package:flutter/services.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -8,7 +9,8 @@ part 'words_list_state.dart';
 part 'words_list_cubit.freezed.dart';
 
 class WordsListCubit extends Cubit<WordsListState> {
-  WordsListCubit() : super(WordsListState.initial());
+  final IWordsRepository _wordsRepository;
+  WordsListCubit(this._wordsRepository) : super(WordsListState.initial());
 
   Future<void> loadWords() async {
     emit(WordsListState.loading());
@@ -23,5 +25,14 @@ class WordsListCubit extends Cubit<WordsListState> {
     } catch (e) {
       emit(WordsListState.error());
     }
+  }
+
+  Future<WordData> getWord(String word) async {
+    final wordData = await _wordsRepository.fetchWordData(word);
+    WordData result = WordData.empty();
+    wordData.fold((l) => emit(WordsListState.error()), (r) {
+      result = r;
+    });
+    return result;
   }
 }

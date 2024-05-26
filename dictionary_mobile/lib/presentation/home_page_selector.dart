@@ -15,7 +15,6 @@ class HomePageSelector extends StatefulWidget {
 
 class _HomePageSelectorState extends State<HomePageSelector> {
   @override
-  @override
   Widget build(BuildContext context) {
     return BlocBuilder<NavigationCubit, NavigationState>(
       builder: (context, state) {
@@ -34,16 +33,17 @@ class _HomePageSelectorState extends State<HomePageSelector> {
                 orElse: () {},
               );
               state.maybeWhen(
-                  loaded: (words) {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => HomePage(
-                              words: words,
-                            )));
-                  },
-                  orElse: () {});
+                loading: () {
+                  CircularProgressIndicator();
+                },
+                orElse: () {},
+              );
             },
             builder: (context, state) {
-              return HomePage();
+              return state.maybeWhen(
+                loaded: (words) => HomePage(words: words),
+                orElse: () => Container(),
+              );
             },
           ),
           history: () => Container(),

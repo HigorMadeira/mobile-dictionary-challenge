@@ -1,3 +1,3 @@
-int calculate() {
-  return 6 * 7;
-}
+library dictionary_domain;
+
+export 'src/words/domain_words.dart';

@@ -25,7 +25,6 @@ class MenuItemMobile extends StatelessWidget {
         alignment: Alignment.centerRight,
         children: [
           Container(
-            color: AppColors.primaryBlue,
             margin: const EdgeInsets.symmetric(
               vertical: 4,
             ),
@@ -37,7 +36,7 @@ class MenuItemMobile extends StatelessWidget {
                   size: 24,
                   color: isSelected
                       ? AppColors.accentOrangeLighter
-                      : AppColors.blue50.withOpacity(0.4),
+                      : AppColors.blue50,
                 ),
                 const SizedBox(
                   height: 4,

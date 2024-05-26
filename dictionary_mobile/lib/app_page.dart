@@ -17,7 +17,9 @@ class AppPAge extends StatelessWidget {
           create: (context) => NavigationCubit(),
         ),
         BlocProvider<WordsListCubit>(
-          create: (context) => WordsListCubit()..loadWords(),
+          create: (context) => WordsListCubit(
+            context.read(),
+          )..loadWords(),
         ),
       ],
       child: const MaterialApp(

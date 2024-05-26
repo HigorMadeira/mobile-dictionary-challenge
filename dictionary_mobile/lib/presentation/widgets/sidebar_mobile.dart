@@ -16,12 +16,12 @@ class SideBarMobile extends StatelessWidget {
       duration: const Duration(milliseconds: 100),
       curve: Curves.easeInOut,
       width: isTablet ? 74 : 56,
-      color: AppColors.primaryBlue,
+      color: AppColors.primaryBlue.withOpacity(0.6),
       child: Row(
         children: [
           Expanded(
             child: Container(
-              color: AppColors.primaryBlue,
+              color: AppColors.primaryBlue.withOpacity(0.6),
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
                 child: Row(
